@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TextEditorP.Controller">
+   <children>
+      <BorderPane layoutY="1.0" prefHeight="513.0" prefWidth="649.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#OpenAction" text="Open" />
+                        <MenuItem mnemonicParsing="false" onAction="#SaveActon" text="Save" />
+                        <MenuItem mnemonicParsing="false" onAction="#SaveAsAction" text="Save As" />
+                        <MenuItem mnemonicParsing="false" onAction="#ExitAction" text="Exit" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#UndoAction" text="Undo" />
+                        <MenuItem mnemonicParsing="false" onAction="#CutAction" text="Cut" />
+                        <MenuItem mnemonicParsing="false" onAction="#CopyAction" text="Copy" />
+                        <MenuItem mnemonicParsing="false" onAction="#PastAction" text="Past" />
+                        <MenuItem mnemonicParsing="false" onAction="#DeleteAction" text="Delete" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Zoom in" />
+                        <MenuItem mnemonicParsing="false" text="Zoom out" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Help" />
+                        <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Setting">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Help" />
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <TextArea fx:id="textArea_id" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
