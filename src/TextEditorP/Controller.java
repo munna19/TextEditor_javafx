@@ -11,6 +11,11 @@ import javafx.scene.input.ClipboardContent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/*
+     #####     #####     #####
+     @author: Abdul Al Mamun (Munna)
+     #####     #####     #####
+*/
 public class Controller implements Initializable {
 
     @FXML
